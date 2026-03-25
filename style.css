@@ -5,7 +5,7 @@ body {
 .item {
     width: 300px;
     height: 300px;
-    background-color: rgb(74, 73, 73);
+    background-color: rgb(29, 29, 29);
     font-size: 36px;
     color: rgb(255, 255, 255)
 }
@@ -14,6 +14,10 @@ body {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .page-layout {
@@ -29,10 +33,10 @@ h1 {
 }
 
 header {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1v_vCdU1010LKHXdqakwbWJdaSRhiEqKOw&s);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmeZHE3E1ugYf82gL4hArM1AJg17DXHqU-g&s);
     display: flex;
     justify-content: space-between;
-    color: rgb(255, 255, 255) background-size: center;
+    color: rgb(255, 255, 255) background-position: center;
     background-position: center;
 }
 
@@ -43,14 +47,25 @@ footer {
 }
 
 p {
+    font-family: "Noto Serif SC", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     color: rgb(255, 255, 255)
 }
 
-"workbench.colorCustomizations": {
-    // Color of the link itself
-    "textLink.foreground": "#000000",
-        // Color of the link when you hover over it
-        "textLink.activeForeground": "#000000",
-        // Color of links in the editor when you hold Ctrl/Cmd
-        "editorLink.activeForeground": "#000000"
+h1 {
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.item:hover {
+    background-color: rgb(71, 71, 71);
+    color: black;
+    transform: scaleY(0, 9);
+    transform-origin: center;
+    transition: 0, 2s ease ease-in-out transform scale(0.9, 0.9);
+    transition: transform 0.3s ease;
 }
