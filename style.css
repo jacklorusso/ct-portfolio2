@@ -10,7 +10,8 @@ td {
 
 
 .table1 {
-    /*width: 80%;*/
+    padding: 50px;
+    border-collapse: collapse;
     text-align: center;
 
     margin-top: 5%;
@@ -22,8 +23,16 @@ td {
 
 
 td {
-    /*background-color: rgb(29, 29, 29);*/
+    padding: 20px;
+    background-color: rgb(29, 29, 29);
     width: 50%;
+    text-align: left;
+    vertical-align: top;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+
 
     .originalIMG {
 
@@ -43,6 +52,7 @@ td {
     font-size: 36px;
     color: rgb(255, 255, 255)
 }
+
 
 .container {
     display: flex;
@@ -108,7 +118,10 @@ h2 {
     color: rgb(255, 255, 255)
 }
 
-
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
 
 .slideshow {
@@ -165,4 +178,56 @@ h2 {
     100% {
         opacity: 0;
     }
+}
+
+h3 {
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    flex-direction: top right;
+
+
+}
+
+.profile-pic {
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+button {
+    background-color: #35c1ac;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #a3ffea;
+}
+
+.pink button {
+    background-color: #d53b5c;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+
+}
+
+.pink button:hover {
+    background-color: #f28ac8;
+}
+
+.all-the-buttons {
+    display: flex;
+    gap: 10px;
+
 }
