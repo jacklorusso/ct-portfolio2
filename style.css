@@ -86,8 +86,13 @@ header {
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     color: rgb(255, 255, 255)
+}
+
+main {
+    flex: 1;
 }
 
 p {
@@ -230,4 +235,8 @@ button:hover {
     display: flex;
     gap: 10px;
 
+}
+
+.page-layout {
+    min-height: 100vh
 }
